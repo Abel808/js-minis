@@ -35,8 +35,5 @@ function colorChanger(){
 
 
 
-//   for(let i=0;i<hex.length;i++){
-//    let idx = Math.floor(Math.random()*hex.length)
-//     final += hex[idx];
-//   }
+
    
