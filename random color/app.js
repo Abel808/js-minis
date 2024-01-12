@@ -10,8 +10,8 @@ function colorChanger(){
    let alphabets = ['A','B','C','D','E','F']
    let char =''
    let num =''
-   let hex ='#'
-   let final='' 
+   let hex =''
+   let final= '#'
 
    for(let i=0;i<3;i++){
      let colorIdx = Math.floor(Math.random()*(alphabets.length))
@@ -21,22 +21,26 @@ function colorChanger(){
    
    }
 
-   hex += char + num 
+   hex = char + num 
 
    
+
+  for(let i=0;i<hex.length;i++){
+   let idx = Math.floor(Math.random()*hex.length)
+   final += hex[idx]
+  }
+
+
    
-   output.style.backgroundColor = hex;
+   output.style.backgroundColor = final;
    output.style.height = '190px'
    output.style.width = '200px'
  
 
-   output.innerText = hex
+   output.innerText = final
 }
 
 
 
-//   for(let i=0;i<hex.length;i++){
-//    let idx = Math.floor(Math.random()*hex.length)
-//     final += hex[idx];
-//   }
+
    
